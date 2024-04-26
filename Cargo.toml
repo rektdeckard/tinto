@@ -8,10 +8,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.82"
+clap = { version = "4.5.4", features = ["derive", "env"] }
 crossterm = { version = "0.27.0", features = ["event-stream"] }
+directories = "5.0.1"
 dotenv = "0.15.0"
 futures = "0.3.30"
 hues = { path = "../hues", features = ["mdns", "sse"] }
+log = "0.4.21"
 ratatui = "0.26.2"
+simplelog = "0.12.2"
 tokio = { version = "1.35.1", features = ["full"] }
+toml = "0.8.12"
 
